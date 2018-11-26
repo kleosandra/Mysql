@@ -1,0 +1,27 @@
+
+CREATE DATABEASE BamazonDB
+
+USE BamazonDB
+
+CREATE TABLE products (
+	item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
+	product_name VARCHAR(100) NOT NULL,
+	department_name VARCHAR(50) NOT NULL,
+	price DECIMAL(10,2) NOT NULL,
+	stock_quantity INTEGER(11) NOT NULL,
+	PRIMARY KEY (item_id)
+);
+
+-- Insert data into the 'products' table --
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES  ('Palmolive Shampoo', 'Cosmetics', 5.75, 500),
+		('Dove Conditioner', 'Cosmetics', 6.25, 627),
+		('Worn Denim Jeans','Clothing',54.25,35),
+		('Pampers Baby Wipes', 'Children', 1.50, 423),
+		("Page","Clothing",75.00,5),
+		('Ibuprophen', 'Pharmacy', 4.95, 389),
+		('Zara','Clothing',50.95,254)
+		('Glad 12 Gal Trash Bags', 'Grocery', 5.99, 300),
+		('Tropicana Orange Juice', 'Grocery', 4.45, 267),
+		('Horizon Organic Milk', 'Grocery', 4.50, 200);
+	
